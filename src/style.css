@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  height: 100%;
+  padding: 5vh 0;
+  font-size: 5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+main p {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.input {
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
+
+input[type="text"] {
+  color: black;
+  width: 100%;
+  margin: 3vh 0;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: inherit;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3vh;
+  text-align: center;
+}
+
+input[type="text"]::placeholder {
+  color: inherit;
+  opacity: 0.4;
+}
+
+#container {
+  text-align: center;
+  margin: auto;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3vh;
+}
+
+label {
+  display: inline-block;
+  margin: 2vh 1vw;
+  text-align: center;
+
+  font-size: 3vh;
+  font-family: inherit;
+}
+
+select {
+  border: none;
+  background-color: inherit;
+  font-size: 2.5vh;
+  padding: 1vh 0.5vw;
+  width: auto;
+  font-family: inherit;
+}
+
+button {
+  display: block;
+  background-color: inherit;
+  border: 2px solid black;
+  padding: 2vh 3vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 4vh;
+  margin: 4vh auto;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.currentWeather,
+.forecast {
+  visibility: hidden;
+  width: 50%;
+  margin: auto;
+  margin-top: 5vh;
+  font-size: 4vh;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.currentWeather p,
+.forecast p {
+  font-weight: 600;
+}
+
+.currentWeather,
+.forecast ul li {
+  text-align: center;
+  line-height: 6vh;
+  font-size: 3.5vh;
+  font-weight: 300;
+}
+
+img {
+  width: 15vw;
+}
+
+footer {
+  font-size: 2.5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+footer p {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+footer p:first-child {
+  padding-left: 1vw;
+  float: left;
+}
+
+footer p:last-child {
+  padding-right: 1vw;
+  float: right;
+}
